@@ -9,13 +9,13 @@
   content: ",";   
   display: block;   
   position: absolute;   
-  left: 200px;   
-  top: 100px;   
+  left: 15vw;   
+  top: 15vh;   
 
-  width: 200px;   
-  height: 200px;   
+  width: 15vw;   
+  height: 15vw;   
   background-color: #ff0;   
-  border-radius: 100px;   
+  border-radius: 50%;   
 }  
 @-webkit-keyframes dog {   
   0% {    
@@ -137,11 +137,11 @@
 
 
 .img {
-  width: 300px;
-  height: 300px;
+  width: 25vw;
+  height: 25vw;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 5vh;
+  right: 5vw;
   background: url('../img/ce.gif');
   background-size: cover;
   overflow: hidden;
@@ -167,7 +167,64 @@
     top: 30%;
   }
   100% {
-    left: 10%;
-    top: 10%;
+    left: 5%;
+    top: 5%;
+  }
+}
+
+/* 📱 Responsive cho màn hình điện thoại */
+@media (max-width: 768px) {
+  .moonback::before {
+    left: 10vw;
+    top: 10vh;
+    width: 18vw;
+    height: 18vw;
+  }
+  
+  .img {
+    width: 30vw;
+    height: 30vw;
+    bottom: 3vh;
+    right: 3vw;
+  }
+  
+  .star2 {
+    top: 20vh;
+    left: 15vw;
+  }
+  
+  .star3 {
+    left: 25vw;
+  }
+  
+  .star4 {
+    top: 20vh;
+    left: 25vw;
+  }
+  
+  .star5 {
+    top: 20vh;
+    left: 75vw;
+  }
+  
+  .star6 {
+    top: 20vh;
+    left: 80vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .moonback::before {
+    left: 8vw;
+    top: 8vh;
+    width: 20vw;
+    height: 20vw;
+  }
+  
+  .img {
+    width: 35vw;
+    height: 35vw;
+    bottom: 2vh;
+    right: 2vw;
   }
 }
